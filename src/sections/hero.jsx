@@ -1,33 +1,32 @@
-import { Button } from "@/components/Button";
+import { Button } from "../assets/Components/Button";
+
 import {
   ArrowRight,
   ChevronDown,
-  Github,
-  Linkedin,
-  Twitter,
   Download,
-} from "lucide-react";
-import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
+} from "lucide-react";import * as Icons from "lucide-react";
+
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { AnimatedBorderButton } from "../assets/Components/AnimatedBorderButton";
+
 
 const skills = [
-  "React",
-  "Next.js",
-  "TypeScript",
-  "Node.js",
-  "GraphQL",
-  "PostgreSQL",
-  "MongoDB",
-  "Redis",
-  "Docker",
-  "AWS",
-  "Vercel",
-  "Tailwind CSS",
-  "Prisma",
-  "Jest",
-  "Cypress",
-  "Figma",
+  "HTML",
+  "CSS",
+  "UI/UX Design",
+  "C++",
+  "Data Structures & Algorithms",
+  "JavaScript",
+  "Python",
+  "NumPy",
+  "Pandas",
+  "Matplotlib",
+  "Scikit-learn",
   "Git",
-  "GitHub Actions",
+  "GitHub",
+  "Responsive Web Design",
+  "Object-Oriented Programming",
+  "Problem Solving"
 ];
 
 export const Hero = () => {
@@ -69,7 +68,7 @@ export const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Software Engineer • React Specialist
+                Software Engineer • Data Analyst
               </span>
             </div>
 
@@ -104,9 +103,8 @@ export const Hero = () => {
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow me: </span>
               {[
-                { icon: Github, href: "#" },
-                { icon: Linkedin, href: "#" },
-                { icon: Twitter, href: "#" },
+                { icon: FaGithub, href: "https://github.com/shreyadav14" },
+                { icon: FaLinkedin, href: "https://www.linkedin.com/in/shreya-yadav-b15347295/" },
               ].map((social, idx) => (
                 <a
                   key={idx}
@@ -130,7 +128,7 @@ export const Hero = () => {
               />
               <div className="relative glass rounded-3xl p-2 glow-border">
                 <img
-                  src="/profile-photo.jpg"
+                  src="/projects/profile-photo.jpg"
                   alt="Shreya Yadav"
                   className="w-full aspect-4/5 object-cover rounded-2xl"
                 />
@@ -146,7 +144,7 @@ export const Hero = () => {
                 </div>
                 {/* Stats Badge */}
                 <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
-                  <div className="text-2xl font-bold text-primary">5+</div>
+                  <div className="text-2xl font-bold text-primary">1</div>
                   <div className="text-xs text-muted-foreground">
                     Years Exp.
                   </div>
