@@ -3,6 +3,14 @@ import { ArrowUpRight} from "lucide-react";
 import { AnimatedBorderButton } from "../assets/Components/AnimatedBorderButton";
 
 const projects =[
+   {
+        title:"AI Resume Analyzer",
+        description: "A smart resume screening system that evaluates resumes against job requirements and highlights strengths and skill gaps.",
+        image:"/projects/resume.png",
+        tags:["React.js", "React Router", "Python", "Scikit-learn", "MySQL"],
+        link:"https://ai-resume-analyzer-six-inky.vercel.app/",
+        FaGithub:"https://github.com/shreyadav14/AI-Resume-Analyzer",
+    },
     {
         title:"Stress App",
         description:"A wellness application that helps users monitor stress levels and promotes healthy stress-management habits.",
@@ -14,19 +22,12 @@ const projects =[
     {
         title:" Smart Crop Prediction System",
         description:"A machine learning-based system that predicts suitable crops using environmental and agricultural data.",
-        image:"",
+        image:"/projects/crop.jpeg",
         tags:["Python", "Scikit-learn", "Machine Learning", "Pandas", "NumPy"],
         link:"",
         FaGithub:"https://github.com/shreyadav14/Smart-Crop-prediction.git",
     },
-    {
-        title:"AI Resume Analyzer",
-        description: "A smart resume screening system that evaluates resumes against job requirements and highlights strengths and skill gaps.",
-        image:"/projects/resume.png",
-        tags:["React.js", "React Router", "Python", "Scikit-learn", "MySQL"],
-        link:"https://ai-resume-analyzer-six-inky.vercel.app/",
-        FaGithub:"https://github.com/shreyadav14/AI-Resume-Analyzer",
-    },
+   
 ]
 export const Projects=()=>{
     return (
