@@ -6,8 +6,8 @@ const projects =[
     {
         title:"Stress App",
         description:"A wellness application that helps users monitor stress levels and promotes healthy stress-management habits.",
-        image:"",
-        tags:["Python", "Scikit-learn", "JavaScript", "UI/UX", "React"],
+        image:"/projects/this.png",
+        tags:["Python", "Scikit-learn", "JavaScript","pandas","numpy", "React"],
         link:"",
         FaGithub:"https://github.com/shreyadav14/Stress_app",
     },
