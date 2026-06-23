@@ -5,7 +5,7 @@ const navLinks=[
     { href:"#about",label:"About"},
     { href:"#projects",label:"Projects"},
     { href:"#experience",label:"Experience"},
-    { href:"#Certifications",label:"Certifications"}
+    { href:"#certifications",label:"Certifications"}
 ];
         export const Navbar=()=>{
             const[isMobileMenuOpen,setIsMobileMenuOpen]=useState(false);
@@ -36,7 +36,16 @@ const navLinks=[
                 </div>
             </div>
             <div className="hidden md:block">
-                <Button size="sm"> Contact Me</Button>
+                <Button
+                    size="sm"
+                    onClick={() =>
+                    document.getElementById("contact")?.scrollIntoView({
+                    behavior: "smooth",
+                    })
+                        }
+                    >
+                    Contact Me
+                </Button>
             </div>
             <button className="md:hidden p-2 text-foreground cursor-poointer"
              onClick={()=>setIsMobileMenuOpen((prev)=>!prev)}>
@@ -53,7 +62,9 @@ const navLinks=[
                             {link.label}
                         </a>
                     ))} 
-                     <Button> Contact Me</Button>
+                     <Button onClick={() => setIsMobileMenuOpen(false)}>
+                        Contact Me
+                 </Button>
             </div>
 
         </div>
