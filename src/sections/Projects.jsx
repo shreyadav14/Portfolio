@@ -12,11 +12,11 @@ const projects =[
         FaGithub:"https://github.com/shreyadav14/AI-Resume-Analyzer",
     },
     {
-        title:"Stress App",
+        title:"Somnia AI",
         description:"A wellness application that helps users monitor stress levels and promotes healthy stress-management habits.",
-        image:"/projects/this.png",
+        image:"/projects/SomniaAi.png",
         tags:["Python", "Scikit-learn", "JavaScript","pandas","numpy", "React"],
-        link:"",
+        link:"https://stress-app-eight.vercel.app",
         FaGithub:"https://github.com/shreyadav14/Stress_app",
     },
     {
